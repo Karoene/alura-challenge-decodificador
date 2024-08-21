@@ -31,4 +31,4 @@ Este projeto é parte do programa T7 ONE em parceria com a Alura e tem como obje
 ### Deploy
 
 O projeto está disponível para visualização no GitHub Pages:  
-[Challenge Text Decoder](https://hacbjr.github.io/challenge-text-decoder/)
+[Challenge Text Decoder](https://karoene.github.io/alura-challenge-decodificador/)
