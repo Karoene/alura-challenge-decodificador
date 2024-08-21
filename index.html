@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Challenge ALURA - Decodificador de Texto</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="new_container">
+        <div class="container_leftbox">
+          <div class="container_titleboxandtext">
+            <h1 class="container_title">Challenge ALURA - Decodificador de Texto</h1>
+            <textarea
+              class="container_input"
+              placeholder="Digite aqui..."
+            ></textarea>
+          </div>
+          <div class="container_leftbottom">
+            <p class="container_rule">
+              Apenas letras minúsculas e sem acento.
+            </p>
+            <div class="container_btns">
+              <button onclick="encryptText()" class="container_btn">
+                Criptografar
+              </button>
+              <button onclick="decryptText()" class="container_btn">
+                Descriptografar
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container_rightbox">
+          <div class="container_rectangle">
+            <h2 class="container_output" id="messageToCopy"></h2>
+            <img
+              src="./assets/img01.png"
+              id="lupe-man"
+              alt="Um Homem verificando um diamante com a Lupa"
+            />
+            <div class="container_rightbottom">
+              <div class="container_texts">
+                <h3 class="container_text1">Nenhuma mensagem encontrada</h3>
+                <h4 class="container_text2">
+                  Digite um texto que você deseja criptografar ou descriptografar.
+                </h4>
+                <button
+                  onclick="copyText()"
+                  id="copyButton"
+                  class="container_copybtn"
+                >
+                  Copiar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="credits">
+      <p class="dev_by">Desenvolvido por Karoene</p>      
+      
+    </footer>
+    <script src="app.js" defer></script>
+  </body>
+</html>

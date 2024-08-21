@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap");
+
+body {
+  background-color: black;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  margin: 0;
+}
+
+.container {
+  padding: 3% 12%;
+  display: grid;
+}
+
+.new_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.container_leftbox, .container_rightbox {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.container_leftbottom, .container_rightbox {
+  gap: 1.5rem;
+}
+
+.container_rectangle {
+  width: 22rem;
+  height: 45rem;
+  background: #e2e2e2;
+  border-radius: 2rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem #3a3a3a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.container_title {
+  font-size: 3rem;
+  color: white;
+}
+
+.container_titleboxandtext {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.container_input {
+  font-size: 1.6rem;
+  color: white;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 1rem;
+  height: 20rem;
+}
+
+.container_output {
+  font-size: 1.3rem;
+  visibility: hidden;
+  width: 100%;
+  word-break: break-word;
+  overflow-y: auto;
+  padding-right: 3%;
+  box-sizing: border-box;
+}
+
+.container_btns {
+  display: flex;
+  justify-content: center;
+  gap: 3.125rem;
+}
+
+.container_btn, .container_copybtn {
+  width: 12.5rem;
+  height: 3.125rem;
+  font-size: 1.25rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.container_copybtn {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.container_texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625rem;
+  align-items: center;
+  color: black;
+}
+
+.container_rule {
+  font-size: 0.8rem;
+  color: white;
+}
+
+.credits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  font-family: "JetBrains Mono", monospace;
+  color: white;
+}
+
+.my_name {
+  color: #727272;
+  text-decoration: none;
+}
+
+.wpplogo {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (max-height: 768px) {
+  .container {
+    padding: 2.5% 10%;
+  }
+
+  .container_leftbox, .container_rightbox {
+    gap: 4rem;
+  }
+
+  .container_rectangle {
+    width: 18rem;
+    height: 30rem;
+    padding: 1.5rem;
+  }
+
+  .container_input {
+    height: 12rem;
+  }
+
+  .container_title {
+    font-size: 2.5rem;
+  }
+
+  .container_btn, .container_copybtn {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .container_titleboxandtext {
+    gap: 3rem;
+  }
+
+  .container_texts {
+    gap: 1rem;
+  }
+
+  .container_rule {
+    font-size: 0.7rem;
+  }
+
+  .credits {
+    gap: 0.2rem;
+    font-size: 0.7rem;
+  }
+
+  .wpplogo {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+  }
+
+  .new_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container_leftbox, .container_rightbox {
+    align-items: center;
+    gap: 5%;
+  }
+
+  .container_rectangle {
+    width: 15rem;
+    height: 30rem;
+  }
+
+  .container_btns {
+    margin-bottom: 2%;
+  }
+}
